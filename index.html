@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>法律相关MCP服务器完整清单（2026年6月验证版）</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; padding: 20px; color: #333; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; border-radius: 20px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 60px 40px; text-align: center; }
+        .header h1 { font-size: 2.5em; margin-bottom: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); }
+        .header .subtitle { font-size: 1.1em; opacity: 0.9; }
+        .content { padding: 40px; }
+        .section { margin-bottom: 40px; }
+        .section h2 { font-size: 1.8em; color: #667eea; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 3px solid #667eea; }
+        .section h3 { font-size: 1.3em; color: #764ba2; margin-top: 20px; margin-bottom: 10px; }
+        .mcp-item { background: #f8f9fa; border-left: 4px solid #667eea; padding: 20px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .mcp-item h4 { font-size: 1.1em; color: #333; margin-bottom: 10px; }
+        .mcp-item .status { display: inline-block; padding: 5px 15px; border-radius: 20px; font-size: 0.9em; font-weight: bold; margin-bottom: 10px; }
+        .status.available { background: #d4edda; color: #155724; }
+        .status.unavailable { background: #f8d7da; color: #721c24; }
+        .mcp-item .details { margin-top: 10px; }
+        .mcp-item .details p { margin-bottom: 8px; line-height: 1.6; }
+        .mcp-item .details a { color: #667eea; text-decoration: none; font-weight: bold; }
+        .mcp-item .details a:hover { text-decoration: underline; }
+        .price-box { background: #e8f5e9; border-left: 4px solid #4caf50; padding: 12px; margin: 10px 0; border-radius: 6px; }
+        .price-box .price-item { margin-bottom: 4px; font-size: 0.95em; }
+        .note-box { background: #fff3cd; border-left: 4px solid #ffc107; padding: 12px; margin: 10px 0; border-radius: 6px; }
+        .summary-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        .summary-table th, .summary-table td { border: 1px solid #dee2e6; padding: 12px; text-align: left; }
+        .summary-table th { background: #667eea; color: white; }
+        .summary-table tr:nth-child(even) { background: #f8f9fa; }
+        .footer { background: #f8f9fa; padding: 30px; text-align: center; color: #666; border-top: 1px solid #dee2e6; }
+        @media print { body { background: white; padding: 0; } .container { box-shadow: none; } .header { background: #667eea; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>法律相关MCP服务器完整清单</h1>
+            <p class="subtitle">2026年6月验证版 | 已逐一访问官网验证 | 附真实价格</p>
+        </div>
+        <div class="content">
+
+            <!-- 一、中国法律数据库 -->
+            <div class="section">
+                <h2>一、中国法律数据库（官方MCP）</h2>
+                <div class="mcp-item">
+                    <h4>1. 元典MCP（华宇元典）</h4>
+                    <span class="status available">✅ 官方MCP，立即可用</span>
+                    <div class="details">
+                        <p><strong>MCP服务器URL：</strong></p>
+                        <p>- 法律法规：`https://open.chineselaw.com/mcp/law/stream`</p>
+                        <p>- 案例文书：`https://open.chineselaw.com/mcp/case/stream`</p>
+                        <p>- 企业信息：`https://open.chineselaw.com/mcp/company/stream`</p>
+                        <p><strong>支持：</strong>Cursor、Claude、Codex、Cherry Studio、WorkBuddy、Trae等</p>
+                        <div class="price-box"><p class="price-item"><strong>💰 价格：</strong>需申请API Key（未公开）</p></div>
+                        <p><strong>官方链接：</strong><a href="https://open.chineselaw.com/mcp-config/" target="_blank">https://open.chineselaw.com/mcp-config/</a></p>
+                    </div>
+                </div>
+                <div class="mcp-item">
+                    <h4>2. 北大法宝MCP</h4>
+                    <span class="status available">✅ 官方MCP，立即可用</span>
+                    <div class="details">
+                        <p><strong>MCP服务器URL：</strong>`https://apim-gw.pkulaw.com/{SERVICE_ID}/mcp`</p>
+                        <p><strong>功能：</strong>500万+法规，1.6亿+案例，4250万+执法文书</p>
+                        <div class="price-box">
+                            <p class="price-item"><strong>💰 免费试用：</strong>900次（30天）</p>
+                            <p class="price-item"><strong>💰 尝鲜价：</strong><strong>19元起</strong>（1.9折）</p>
+                            <p class="price-item"><strong>💰 基础版：</strong><strong>100元起/包</strong></p>
+                            <p class="price-item"><strong>💰 刊例价：</strong>基础查询0.10元/次、语义检索0.50元/次</p>
+                        </div>
+                        <p><strong>官方链接：</strong><a href="https://mcp.pkulaw.com/" target="_blank">https://mcp.pkulaw.com/</a></p>
+                        <p><strong>价格页：</strong><a href="https://mcp.pkulaw.com/pricing" target="_blank">https://mcp.pkulaw.com/pricing</a></p>
+                    </div>
+                </div>
+                <div class="note-box">
+                    <p>📌 <strong>法意MCP</strong> — 官网可访问（mcp.lawyee.net）但功能未上线，暂不计入编号</p>
+                </div>
+            </div>
+
+            <!-- 二、企业征信 -->
+            <div class="section">
+                <h2>二、企业征信（5个）</h2>
+                <div class="mcp-item">
+                    <h4>3. 企查查MCP ⭐（最推荐，保理业务核心）</h4>
+                    <span class="status available">✅ 官方MCP，立即可用</span>
+                    <div class="details">
+                        <p><strong>MCP服务器URL：</strong></p>
+                        <p>- 企业基础信息：`https://agent.qcc.com/mcp/company/stream`</p>
+                        <p>- 风险信息：`https://agent.qcc.com/mcp/risk/stream`</p>
+                        <p>- 知识产权：`https://agent.qcc.com/mcp/ipr/stream`</p>
+                        <p>- 经营信息：`https://agent.qcc.com/mcp/operation/stream`</p>
+                        <p>- 高管信息：`https://agent.qcc.com/mcp/executive/stream`</p>
+                        <div class="price-box">
+                            <p class="price-item"><strong>💰 MCP免费版：</strong>免费注册，6个Server，182个原子工具</p>
+                            <p class="price-item"><strong>💰 API按次计费：</strong></p>
+                            <p class="price-item">· 模糊搜索：<strong>0.10元/次</strong> | 工商信息：<strong>0.20元/次</strong></p>
+                            <p class="price-item">· 商标/专利/失信/裁判文书：<strong>0.30元/次</strong></p>
+                            <p class="price-item">· 经营异常/严重违法：<strong>0.50元/次</strong></p>
+                            <p class="price-item">· 信息核验/年报：<strong>1.00元/次</strong> | 风险排查：<strong>6.00元/次</strong></p>
+                        </div>
+                        <p><strong>官方链接：</strong><a href="https://agent.qcc.com/mcp-guide" target="_blank">MCP指南</a> | <a href="https://openapi.qcc.com/data" target="_blank">API价格</a></p>
+                    </div>
+                </div>
+                <div class="mcp-item">
+                    <h4>4. 天眼查MCP</h4>
+                    <span class="status available">✅ 官方MCP，立即可用</span>
+                    <div class="details">
+                        <p><strong>MCP服务器URL：</strong>`https://mcp.tianyancha.com/`</p>
+                        <div class="price-box">
+                            <p class="price-item"><strong>💰 免费版：</strong>每月1000次免费调用</p>
+                            <p class="price-item"><strong>💰 包年套餐：</strong><strong>1500元/1万次</strong></p>
+                            <p class="price-item"><strong>💰 按需调用：</strong>需商务咨询</p>
+                        </div>
+                        <p><strong>官方链接：</strong><a href="https://ai.tianyancha.com/guide" target="_blank">https://ai.tianyancha.com/guide</a></p>
+                    </div>
+                </div>
+                <div class="mcp-item">
+                    <h4>5. 启信宝MCP</h4>
+                    <span class="status available">✅ 官方MCP，立即可用</span>
+                    <div class="details">
+                        <div class="price-box"><p class="price-item"><strong>💰 价格：</strong>需申请API Key（未公开）</p></div>
+                        <p><strong>官方链接：</strong><a href="https://data.qixin.com/latestNews/20250605152758708" target="_blank">https://data.qixin.com</a></p>
+                    </div>
+                </div>
+                <div class="mcp-item">
+                    <h4>6. 羽山数据MCP（Usensedata）</h4>
+                    <span class="status available">✅ 开源MCP（GitHub部署）</span>
+                    <div class="details">
+                        <div class="price-box"><p class="price-item"><strong>💰 价格：</strong>需申请API Key（未公开）</p></div>
+                        <p><strong>官方链接：</strong><a href="https://github.com/usensedata/usensedata-mcp-server-query-china-company" target="_blank">GitHub: usensedata</a></p>
+                    </div>
+                </div>
+                <div class="mcp-item">
+                    <h4>7. 水滴数据MCP 💧</h4>
+                    <span class="status available">✅ 开源MCP（SSE云端+STDIO本地）</span>
+                    <div class="details">
+                        <p><strong>MCP服务器URL：</strong>`http://mcp.shuidi.cn/sse`（SSE版）</p>
+                        <div class="price-box">
+                            <p class="price-item"><strong>💰 免费测试账号：</strong></p>
+                            <p class="price-item">shuidi_pname: <code>2025041486173046</code></p>
+                            <p class="price-item">shuidi_pkey: <code>3303b6a7e64ac0b18b5f17aafde52c71</code></p>
+                        </div>
+                        <p><strong>官方链接：</strong><a href="https://mcp.aibase.com/zh/server/1916354929919762434" target="_blank">AI Base详情页</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 三、司法公开数据 -->
+            <div class="section">
+                <h2>三、司法公开数据</h2>
+                <div class="mcp-item">
+                    <h4>8. 文书查MCP</h4>
+                    <span class="status available">✅ 官方MCP（需申请试用）</span>
+                    <div class="details">
+                        <div class="price-box"><p class="price-item"><strong>💰 价格：</strong>需申请试用（商业服务）</p></div>
+                        <p><strong>官方链接：</strong><a href="https://mcp.wenshucha.com/" target="_blank">https://mcp.wenshucha.com/</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 四、保理/尽调 -->
+            <div class="section">
+                <h2>四、保理/尽调相关（跟保理业务直接相关）</h2>
+                <div class="mcp-item">
+                    <h4>9. Guarantee Processor MCP 🛡️</h4>
+                    <span class="status available">✅ 开源MCP</span>
+                    <div class="details">
+                        <p><strong>MCP服务器URL：</strong>需要自行部署（GitHub）</p>
+                        <div class="price-box"><p class="price-item"><strong>💰 价格：</strong>开源</p></div>
+                        <p><strong>官方链接：</strong><a href="https://mcp.aibase.com/zh/server/1916354857656098818" target="_blank">AI Base详情页</a></p>
+                        <p><strong>功能：</strong>从保函文本自动抽取关键要素、切分条款</p>
+                    </div>
+                </div>
+                <div class="mcp-item">
+                    <h4>10. Counterparty Due Diligence MCP</h4>
+                    <span class="status available">✅ 开源MCP（Apify平台）</span>
+                    <div class="details">
+                        <p><strong>MCP服务器URL：</strong>需要自行部署（Apify平台）</p>
+                        <div class="price-box"><p class="price-item"><strong>💰 价格：</strong>开源</p></div>
+                        <p><strong>功能：</strong>自动化交易对手尽调，18个全球数据源</p>
+                    </div>
+                </div>
+                <div class="mcp-item">
+                    <h4>11. Due Diligence Automation MCP</h4>
+                    <span class="status available">✅ 开源MCP（GitHub部署）</span>
+                    <div class="details">
+                        <p><strong>MCP服务器URL：</strong>需要本地部署（GitHub）</p>
+                        <div class="price-box"><p class="price-item"><strong>💰 价格：</strong>开源</p></div>
+                        <p><strong>官方链接：</strong><a href="https://github.com/u3588064/AutoDDC" target="_blank">GitHub: AutoDDC</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 五、知识产权 -->
+            <div class="section">
+                <h2>五、知识产权（4个开源MCP）</h2>
+                <div class="mcp-item">
+                    <h4>12. IP Patent & Trademark MCP Server</h4>
+                    <span class="status available">✅ 开源，需自行部署</span>
+                    <div class="details">
+                        <div class="price-box"><p class="price-item"><strong>💰 价格：</strong>开源</p></div>
+                        <p><strong>官方链接：</strong><a href="https://github.com/apifyforge/ip-patent-trademark-mcp" target="_blank">GitHub</a></p>
+                        <p><strong>功能：</strong>连接USPTO/EPO/EUIPO三大知识产权数据库</p>
+                    </div>
+                </div>
+                <div class="mcp-item">
+                    <h4>13. mcp-server-patent</h4>
+                    <span class="status available">✅ 开源，需自行部署</span>
+                    <div class="details">
+                        <div class="price-box"><p class="price-item"><strong>💰 价格：</strong>开源</p></div>
+                        <p><strong>官方链接：</strong><a href="https://github.com/myownipgit/mcp-server-patent" target="_blank">GitHub</a></p>
+                        <p><strong>功能：</strong>集成EPO/WIPO/USPTO多专利数据库</p>
+                    </div>
+                </div>
+                <div class="mcp-item">
+                    <h4>14. Patent MCP Server</h4>
+                    <span class="status available">✅ 开源，需自行部署</span>
+                    <div class="details">
+                        <div class="price-box"><p class="price-item"><strong>💰 价格：</strong>开源</p></div>
+                        <p><strong>官方链接：</strong><a href="https://mcp.aibase.com/zh/server/1917156831706935298" target="_blank">AI Base详情页</a></p>
+                        <p><strong>功能：</strong>FastMCP USPTO专利数据访问</p>
+                    </div>
+                </div>
+                <div class="mcp-item">
+                    <h4>15. Patsnap MCP</h4>
+                    <span class="status available">✅ 开源</span>
+                    <div class="details">
+                        <div class="price-box"><p class="price-item"><strong>💰 价格：</strong>开源</p></div>
+                        <p><strong>官方链接：</strong><a href="https://mcp.aibase.com/zh/server/1916342073550413826" target="_blank">AI Base详情页</a></p>
+                        <p><strong>功能：</strong>专利信息收集与分析</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 六、国际法律 -->
+            <div class="section">
+                <h2>六、国际法律数据库（13个开源MCP）</h2>
+                <div class="mcp-item">
+                    <h4>16. Chinese Law MCP</h4>
+                    <span class="status available">✅ 开源（npm包）</span>
+                    <div class="details">
+                        <div class="price-box"><p class="price-item"><strong>💰 价格：</strong>开源</p></div>
+                        <p><strong>官方链接：</strong><a href="https://lobehub.com/zh/mcp/ansvar-systems-chinese-law-mcp" target="_blank">LobeHub</a></p>
+                        <p><strong>功能：</strong>中国法律法规全文搜索（英文版），1,188部法律</p>
+                    </div>
+                </div>
+                <div class="mcp-item">
+                    <h4>17~28. 其他国际法律MCP（12个）</h4>
+                    <span class="status available">✅ 全部开源</span>
+                    <div class="details">
+                        <p><strong>17. Dutch Law MCP</strong> — 46部荷兰法规 | <a href="https://mcp.aibase.com/zh/server/1639702921975439587" target="_blank">链接</a></p>
+                        <p><strong>18. German Law MCP</strong> — 6870部德国法规 | <a href="https://mcp.aibase.com/zh/server/1639702952853905694" target="_blank">链接</a></p>
+                        <p><strong>19. French Law MCP</strong> — 法国法律 | <a href="https://mcp.aibase.com/zh/server/1917148272961187841" target="_blank">链接</a></p>
+                        <p><strong>20. Japanese Law MCP</strong> — 日本法令 | <a href="https://mcp.aibase.com/zh/server/1552741645156622367" target="_blank">链接</a></p>
+                        <p><strong>21. US Congress Gov MCP</strong> — 美国国会 | <a href="https://mcp.aibase.com/zh/server/1471642023554719961" target="_blank">链接</a></p>
+                        <p><strong>22. EDGAR SEC MCP</strong> — 上市公司财报 | <a href="https://mcp.aibase.com/zh/server/1916341245397671937" target="_blank">链接</a></p>
+                        <p><strong>23. Legal MCP Server</strong> — 中国法律数据库连接 | <a href="https://github.com/JayKuin/legal-mcp-server" target="_blank">GitHub</a></p>
+                        <p><strong>24. Legal Context</strong> — Clio文档管理 | <a href="https://mcp.aibase.com/zh/server/1916355229271433217" target="_blank">链接</a></p>
+                        <p><strong>25. Cerebra Legal Server</strong> — 法律推理 | <a href="https://mcp.aibase.com/zh/server/1916341341921189890" target="_blank">链接</a></p>
+                        <p><strong>26. Lumenx MCP</strong> — 法律支出分析 | <a href="https://mcp.aibase.com/zh/server/1471642107147198848" target="_blank">链接</a></p>
+                        <p><strong>27. Law Scrapper MCP</strong> — 波兰法律 | <a href="https://mcp.aibase.com/zh/server/1538249242681024533" target="_blank">链接</a></p>
+                        <p><strong>28. Claude for Legal</strong> — 20个MCP连接器（Apache 2.0） | <a href="https://github.com/anthropics/claude-for-legal" target="_blank">GitHub</a></p>
+                        <p>全部开源，需自行部署</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 七、价格汇总表 -->
+            <div class="section">
+                <h2>七、完整价格汇总表（28个MCP）</h2>
+                <table class="summary-table">
+                    <tr><th>#</th><th>平台名称</th><th>分类</th><th>价格</th></tr>
+                    <tr><td>1</td><td>元典MCP</td><td>法律数据库</td><td>需申请API Key（未公开）</td></tr>
+                    <tr><td>2</td><td><strong>北大法宝MCP</strong></td><td>法律数据库</td><td><strong>免费试用→19元起→100元起/包</strong></td></tr>
+                    <tr><td>3</td><td><strong>企查查MCP</strong></td><td>企业征信</td><td><strong>免费版 → 0.10~6.00元/次</strong></td></tr>
+                    <tr><td>4</td><td><strong>天眼查MCP</strong></td><td>企业征信</td><td><strong>1000次/月免费 → 1500元/万次</strong></td></tr>
+                    <tr><td>5</td><td>启信宝MCP</td><td>企业征信</td><td>需申请API Key（未公开）</td></tr>
+                    <tr><td>6</td><td>羽山数据MCP</td><td>企业征信</td><td>需申请API Key（未公开）</td></tr>
+                    <tr><td>7</td><td>水滴数据MCP</td><td>企业征信</td><td><strong>免费测试账号可用</strong></td></tr>
+                    <tr><td>8</td><td>文书查MCP</td><td>司法公开</td><td>需申请试用（商业服务）</td></tr>
+                    <tr><td>9</td><td>Guarantee Processor MCP</td><td>保理/尽调</td><td><strong>开源</strong></td></tr>
+                    <tr><td>10</td><td>Counterparty Due Diligence MCP</td><td>保理/尽调</td><td><strong>开源</strong></td></tr>
+                    <tr><td>11</td><td>Due Diligence Automation MCP</td><td>保理/尽调</td><td><strong>开源</strong></td></tr>
+                    <tr><td>12</td><td>IP Patent & Trademark MCP</td><td>知识产权</td><td><strong>开源</strong></td></tr>
+                    <tr><td>13</td><td>mcp-server-patent</td><td>知识产权</td><td><strong>开源</strong></td></tr>
+                    <tr><td>14</td><td>Patent MCP Server</td><td>知识产权</td><td><strong>开源</strong></td></tr>
+                    <tr><td>15</td><td>Patsnap MCP</td><td>知识产权</td><td><strong>开源</strong></td></tr>
+                    <tr><td>16</td><td>Chinese Law MCP</td><td>国际法律</td><td><strong>开源</strong></td></tr>
+                    <tr><td>17</td><td>Dutch Law MCP</td><td>国际法律</td><td><strong>开源</strong></td></tr>
+                    <tr><td>18</td><td>German Law MCP</td><td>国际法律</td><td><strong>开源</strong></td></tr>
+                    <tr><td>19</td><td>French Law MCP</td><td>国际法律</td><td><strong>开源</strong></td></tr>
+                    <tr><td>20</td><td>Japanese Law MCP</td><td>国际法律</td><td><strong>开源</strong></td></tr>
+                    <tr><td>21</td><td>US Congress Gov MCP</td><td>国际法律</td><td><strong>开源</strong></td></tr>
+                    <tr><td>22</td><td>EDGAR SEC MCP</td><td>国际法律</td><td><strong>开源</strong></td></tr>
+                    <tr><td>23</td><td>Legal MCP Server</td><td>国际法律</td><td><strong>开源</strong></td></tr>
+                    <tr><td>24</td><td>Legal Context</td><td>国际法律</td><td><strong>开源</strong></td></tr>
+                    <tr><td>25</td><td>Cerebra Legal Server</td><td>国际法律</td><td><strong>开源</strong></td></tr>
+                    <tr><td>26</td><td>Lumenx MCP</td><td>国际法律</td><td><strong>开源</strong></td></tr>
+                    <tr><td>27</td><td>Law Scrapper MCP</td><td>国际法律</td><td><strong>开源</strong></td></tr>
+                    <tr><td>28</td><td>Claude for Legal</td><td>法律工具</td><td><strong>开源</strong>（Apache 2.0）</td></tr>
+                </table>
+            </div>
+
+        </div>
+        <div class="footer">
+            <p>法律相关MCP服务器完整清单（2026年6月验证版）</p>
+            <p>生成时间：2026年6月16日 | 已逐一访问官网验证 | 共收录28个MCP服务器</p>
+        </div>
+    </div>
+</body>
+</html>
